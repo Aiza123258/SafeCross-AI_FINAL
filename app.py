@@ -27,7 +27,6 @@ inject_global_css()
 
 with st.sidebar:
     render_sidebar_brand()
-    render_sidebar_home()
     render_sidebar_about()
     render_sidebar_nav()
     render_detection_settings_panel()
