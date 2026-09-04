@@ -5,7 +5,6 @@ AI-Powered Intelligent Road Safety & Emergency Management Platform.
 
 import streamlit as st
 import sys
-import os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from utils.ui_components import (
