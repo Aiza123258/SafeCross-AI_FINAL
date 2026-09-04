@@ -1686,6 +1686,7 @@ def render_sidebar_footer():
 # ── Top Horizontal Navigation ────────────────────────────────────────────────
 
 _NAV_ITEMS = [
+    ("app.py", "Home", ":material/home:"),
     ("pages/1__Severity_Predictor.py", "Severity Predictor", ":material/bar_chart:"),
     ("pages/2__Fatality_Risk.py", "Fatality Risk", ":material/person_alert:"),
     ("pages/3__Pakistan_Dashboard.py", "Pakistan Dashboard", ":material/grid_view:"),
