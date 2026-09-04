@@ -1635,7 +1635,15 @@ def render_sidebar_brand():
         <div class="sc-brand-subtitle">Road Safety Intelligence</div>
     </div>
     """, unsafe_allow_html=True)
-
+    
+def render_sidebar_home():
+    """Render Home button in the sidebar."""
+    st.page_link(
+        "app.py",
+        label="Home",
+        icon=":material/home:",
+        use_container_width=True
+    )
 
 def render_sidebar_about():
     """Render an outlined About button in the sidebar that toggles a description."""
