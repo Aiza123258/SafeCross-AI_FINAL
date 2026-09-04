@@ -13,7 +13,7 @@ from utils.ui_components import (
     render_compact_metric_card,
     render_feature_card, render_pipeline_step, render_footer,
     render_section_title, render_sidebar_brand, render_sidebar_home, render_sidebar_about, render_sidebar_nav,
-    render_sidebar_footer, render_detection_settings_panel,
+    render_sidebar_brand, render_sidebar_home, render_sidebar_about, render_sidebar_nav,render_top_nav,
 )
 
 st.set_page_config(
@@ -31,6 +31,9 @@ with st.sidebar:
     render_sidebar_nav()
     render_detection_settings_panel()
     render_sidebar_footer()
+# ── Top Navigation ───────────────────────────────────────────────────────────
+
+render_top_nav()
 
 
 # ── Hero Section ─────────────────────────────────────────────────────────────
