@@ -25,8 +25,6 @@ st.set_page_config(
 
 inject_global_css()
 
-render_top_nav()
-
 with st.sidebar:
     render_sidebar_brand()
     render_sidebar_home()
