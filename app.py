@@ -12,7 +12,7 @@ from utils.ui_components import (
     inject_global_css, render_hero, render_metric_card,
     render_compact_metric_card,
     render_feature_card, render_pipeline_step, render_footer,
-    render_section_title, render_sidebar_brand, render_sidebar_about, render_sidebar_nav,
+    render_section_title, render_sidebar_brand, render_sidebar_home, render_sidebar_about, render_sidebar_nav,
     render_sidebar_footer, render_top_nav, render_detection_settings_panel,
 )
 
