@@ -5,7 +5,13 @@ Supports image upload, webcam capture, and video file processing.
 """
 
 import streamlit as st
-import cv2
+try:
+    try:
+    import cv2
+    CV2_AVAILABLE = True
+except ImportError:
+    cv2 = None
+    CV2_AVAILABLE = False
 import numpy as np
 import time
 import sys
@@ -42,6 +48,10 @@ except ImportError:
     BARRIER_ENGINE_AVAILABLE = False
 
 st.set_page_config(page_title="Live Detection - SafeCross AI", page_icon="", layout="wide")
+if not CV2_AVAILABLE:
+    st.error("Live Detection is temporarily unavailable on this deployment because the OpenCV system library is unavailable.")
+    st.info("The other SafeCross AI features remain available.")
+    st.stop()
 
 try:
     from utils.ui_components import inject_global_css, render_page_header, render_footer, render_sidebar_brand, render_sidebar_about, render_sidebar_nav, render_sidebar_footer, render_top_nav
